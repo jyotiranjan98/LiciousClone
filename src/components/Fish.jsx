@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import { Navbar } from "./Navbar";
 import { Button, Flex, Text } from "@chakra-ui/react";
+import { Footer } from "./Footer";
 
 export const Fish = () => {
   const [fish, setFish] = useState([]);
@@ -55,6 +56,7 @@ export const Fish = () => {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };

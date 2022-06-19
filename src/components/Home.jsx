@@ -1,5 +1,6 @@
 import { Box, Button, Center, Flex, Grid, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 
 export const Home = () => {
@@ -30,7 +31,7 @@ export const Home = () => {
           Enjoy unlimited free delivery & perks crafted for true meat lovers
         </Text>
       </Box>
-      <Box mt={"10px"} border="1px solid green">
+      <Box mt={"10px"} >
         <Text fontSize={"20px"} fontWeight={"bold"} color={"#D11243"}>
           Know the Licious way
         </Text>
@@ -75,17 +76,17 @@ export const Home = () => {
           borderRadius="8px"
         />
       </Box>
-      <Box border={"1px solid red"} bg={"#f1a94b"} ml={"290px"} h={"80px"} borderRadius={"8px"} width={"60%"} mt={"20px"}>
+      <Box  bg={"#f1a94b"} ml={"290px"} h={"80px"} borderRadius={"8px"} width={"60%"} mt={"20px"}>
         <Flex gap={"30px"} mt={"10px"}>
             <Image src="https://d2407na1z3fc0t.cloudfront.net/Banner/rebranding_referral_banner_icon.png" width={"40px"} ml={"40px"}></Image>
             <Text fontWeight={"bold"} fontSize={"30px"} color={"white"}>Invite friends and get Rs 200 per referral</Text>
         </Flex>
       </Box>
       <Box>
-        <Text textAlign={"initial"} fontWeight={"bold"} fontSize={"22px"}>
+        <Text ml={"150px"} textAlign={"initial"} fontWeight={"bold"} fontSize={"22px"}>
           Best Sellers
         </Text>
-        <Text textAlign={"initial"} fontWeight={"bold"} fontSize={"22px"}>
+        <Text ml={"150px"} textAlign={"initial"} fontWeight={"bold"} fontSize={"22px"}>
           Boneless Cuts
         </Text>
       </Box>
@@ -155,7 +156,7 @@ export const Home = () => {
       <Center mt={"10"}>
         <Image src="https://d2407na1z3fc0t.cloudfront.net/homepageStaticBanner/homepageStaticBanner_62a34bdbb6f63"></Image>
       </Center>
-     
+     <Footer/>
     </Box>
   );
 };

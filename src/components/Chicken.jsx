@@ -3,9 +3,12 @@ import { useEffect } from "react";
 import axios from "axios";
 import { Navbar } from "./Navbar";
 import { Button, Flex, Text } from "@chakra-ui/react";
+import { Footer } from "./Footer";
 
 export const Chicken = () => {
   const [chicken, setChicken] = useState([]);
+  const [state,setState]=useState({})
+
   useEffect(() => {
     chickendata();
   }, []);
@@ -21,14 +24,15 @@ export const Chicken = () => {
   // }
 
   const addChicken = () => {
-    axios
-      .post("http://localhost:5000/cart")
-      .then((res) => {
-        console.log(res.data);
-      })
-      .catch((err) => {
-        console.log(err.data);
-      });
+    axios.post("http://localhost:5000/cart",state).then(()=>{
+      setState({});
+    })
+      // .then((res) => {
+      //   console.log(res.data);
+      // })
+      // .catch((err) => {
+      //   console.log(err.data);
+      // });
   };
   return (
     <div>
@@ -58,6 +62,7 @@ export const Chicken = () => {
           </div>
         ))}
       </div>
+      <Footer/>
     </div>
   );
 };

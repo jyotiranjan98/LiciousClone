@@ -17,7 +17,7 @@ code {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   grid-column-gap: 20px;
-  border: 1px solid red;
+ 
 }
 .desc{
   border-radius: 10px;
@@ -45,7 +45,7 @@ code {
 
 }
 .crdata{
-  border: 1px solid red;
+ margin-top: 10px;
 }
 .crdesc{
   height: 100px;
